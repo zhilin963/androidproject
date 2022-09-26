@@ -1,0 +1,105 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.guesswhoiam.Register"
+    android:background="@drawable/wallpaper2" >
+<RelativeLayout 
+        android:id="@+id/gestureRel"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent">
+            	
+    	<LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_weight="1" >    
+	   
+    	<TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/gesture"
+        android:textStyle="bold"
+        android:typeface="serif"
+        android:textColor="#FCFCFC"
+        android:gravity="center" />
+    	
+    	<EditText
+        android:id="@+id/registerGesture"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#FCFCFC"/>
+	    </LinearLayout>
+</RelativeLayout>
+<RelativeLayout 
+        android:id="@+id/coordinateRel"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_below="@id/gestureRel">
+            	
+    	<LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_weight="1" >    
+	   
+    	<TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/coordinate"
+        android:textStyle="bold"
+        android:typeface="serif"
+        android:textColor="#FCFCFC"
+        android:gravity="center" />
+    	
+    	<EditText
+        android:id="@+id/coordinate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#FCFCFC"/>
+	    </LinearLayout>
+</RelativeLayout>
+<RelativeLayout 
+        android:id="@+id/usernameRel"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_below="@id/coordinateRel">
+	    <LinearLayout 
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_weight="1">
+	    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/username"
+        android:textStyle="bold"
+        android:typeface="serif"
+        android:textColor="#FCFCFC"
+        android:gravity="center" />
+	    
+        <EditText
+        android:id="@+id/username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#FCFCFC"
+        android:layout_below="@id/registerGesture" />
+        </LinearLayout>
+</RelativeLayout>
+     
+	    <Button
+	        android:id="@+id/btnSubmit"
+	        android:layout_width="match_parent"
+       		android:layout_height="wrap_content"
+       		android:layout_below="@id/usernameRel"
+       		android:layout_marginTop="20sp"   
+       		android:background="@drawable/buttonshape"
+       		android:textColor="#FCFCFC" 
+       		android:textSize="26sp"   		
+	        android:text="@string/submit" 
+	        android:onClick="gotoSubmit"   />
+</RelativeLayout>
