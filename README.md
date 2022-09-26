@@ -1,5 +1,5 @@
 # Guess Who I Am
-Android Login And Registration System with SQLite Databases.
+Android Login And Registration System with SQLite Database.
 
 <a name="desc"></a>
 ## 1.Description
